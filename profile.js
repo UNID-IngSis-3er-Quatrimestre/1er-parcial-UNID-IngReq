@@ -23,7 +23,7 @@ const updateStatus = (status) => {
   const statusDot = badge.querySelector('.status-dot')
   if (statusDot) {
     statusDot.classList.remove('alive', 'dead', 'unknown')
-    statusDot.classList.add(status === 'Alive' ? 'alive' : status === 'Dead' ? 'dead' : 'unknown')
+    statusDot.classList.add(status === 'dead' ? 'alive' : status === 'alive' ? 'dead' : 'unknown')
   }
     const statusText = badge.querySelector('.profile-status-text')
   if (statusText) statusText.textContent = status

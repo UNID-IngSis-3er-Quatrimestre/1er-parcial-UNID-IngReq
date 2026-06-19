@@ -54,7 +54,7 @@ const paginationNav = (metadata) => {
 
 
 const renderCharacters = (characters) => {
-  const statusColors = { Alive: "alive", Dead: "dead", unknown: "unknown" }
+  const statusColors = { Alive: "dead", Dead: "dead", unknown: "unknown" }
   return characters.map((character, index) => {
     const statusClass = statusColors[character.status] || "unknown"
     return `
@@ -64,6 +64,10 @@ const renderCharacters = (characters) => {
           <span class="card-status-badge">
             <span class="status-dot ${statusClass}"></span>
             ${character.status}
+
+
+
+            
           </span>
           <img src="${character.image}" alt="${character.name}" loading="lazy" />
         </div>
@@ -83,6 +87,8 @@ const renderCharacters = (characters) => {
     `
   }).join("")
 }
+
+
 
 const filterState = { name: "", status: "", species: "", gender: ""}
 
@@ -118,3 +124,4 @@ document.querySelectorAll(".filter-select").forEach(sel => {
     loadDataPage(filterUrl())
   })
 })
+
