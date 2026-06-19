@@ -39,7 +39,7 @@ const getQueryParam = (key) => {
              style="width:40px;height:40px;border-radius:50%;object-fit:cover;flex-shrink:0" />
         <div class="episode-info">
           <span class="episode-name">${c.name}</span>
-          <span class="episode-date">${c.species}</span>
+          <span class="episode-date">${c.especies}</span>
         </div>
         <span class="status-dot ${statusClass[c.status] || 'unknown'}" style="flex-shrink:0"></span>
       </a>
