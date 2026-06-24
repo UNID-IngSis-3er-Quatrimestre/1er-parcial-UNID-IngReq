@@ -466,7 +466,7 @@ body {
   text-overflow: ellipsis;
 }
 
-.card-species {
+.card-especies {
   font-size: 13px;
   font-weight: 400;
   color: var(--text-secondary);
